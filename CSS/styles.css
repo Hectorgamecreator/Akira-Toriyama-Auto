@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Mono|Roboto+Mono:300,300i,700');
+ 
+* {
+  margin: 0;
+}
+
+html, body, header {
+  height: auto;
+  font-size: 24px;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+} 
+h1{
+    color:orange;
+}
+
+ul {
+  list-style: none;
+  font-size: .7rem;
+  padding-left: 0;
+}
+
+li span {
+  font-weight: bold;
+  color: orangered;
+}
+
+.container-fluid {
+    padding: 0 25px;
+  }  
+
+.row {
+    padding: 0 25px;
+  }  
+  
+.jumbotron {
+  background-image: URL("https://media.tenor.com/zNn3XkGuBt8AAAAC/dragon-ball.gif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  padding: 0;
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+
+.meet {
+    font-family: 'PT Mono', monospace;
+    font-size: 5em;
+    margin-top: 50px;
+    padding-bottom: 120px;
+  }
+  
+  /* adjustes the column measure to line up with outer edges of the  rule */
+  .col-lg-5, .col-md-5, .col-sm-5, .col-lg-6, .col-md-6, .col-xs-12 {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+  
+  /* this hides the mobile img until called in media query; break size 560px*/
+  .mobile {
+    display: none;
+    font-family: 'PT Mono', monospace;
+    height: 100%;
+    color: blueviolet;
+  }
+  
+  .bordertop {
+    border-top: 5px solid black;
+    margin: 40px 125px 10px 0;
+  }
+  
+  .btn {
+    font-family: 'PT Mono', monospace;
+    color: rgb(246, 173, 16);
+  }
+  
+  hr {
+    display: none;
+  }
+  #quote {
+    font-family: 'PT Mono', monospace;
+    font-size: 2rem;
+    margin: 0;
+    color: orangered
+  }
+  
+  #citesig {
+    font-family: 'Roboto mono';
+    font-size: .5em;
+    line-height: 2em;
+  }
+  
+  .btn {
+    margin-bottom: 45px;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .jumbotron h1 {
+       padding: 150px 0 200px;
+    }
+  }
+  /* fixes bootstraps font-size 63px for jumbotron*/
+  @media screen and (min-width: 760px) {
+    .jumbotron h1 {
+       font-size: 5em;
+    }
+  }
+    
+  @media screen and (max-width: 760px) {
+     .jumbotron h1 {
+       font-size: 4em;
+       padding-bottom: 20px;
+    }
+   
+  #quote {
+    Display: block;
+    font-size: 1.5em;
+    }
+    
+  #citesig {
+    font-size: .5em;
+    }
+  }
+    
+  /* mobile screen styles */
+  @media screen and (max-width: 560px) {
+    
+    header {
+      height: 0%;
+    }
+  
+  .jumbotron {
+    display: none;
+    }
+   
+  #nonMobile {
+    display: none;
+    }
+    
+  .mobile {
+    display: block;
+    text-align: center;
+    
+    }
+    
+  h1 {
+    font-size: 4em;
+    line-height: .9em;
+    padding: 15px 30px 15px;
+    }
+    
+  #quote {
+    font-size: 1.2em;
+    padding : 0 30px 0 30px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    }
+    
+  #mobilequote {
+    Display: block;
+    font-size: 4em;
+    height: 65px;
+    }
+    
+  #citesig {
+    font-size: .7em;
+    position: relative;
+    top: -20px;
+    }
+  }
